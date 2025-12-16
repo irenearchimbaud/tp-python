@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 
-
 class BookBase(BaseModel):
     title: str
     isbn: str
@@ -8,18 +7,17 @@ class BookBase(BaseModel):
     total_copies: int
     author_id: int
 
-
 class BookCreate(BookBase):
-    """
-    Schéma pour créer un livre
-    """
     pass
 
+class BookUpdate(BookBase):
+    title: str | None = None
+    isbn: str | None = None
+    year: int | None = None
+    total_copies: int | None = None
+    author_id: int | None = None
 
 class BookRead(BookBase):
-    """
-    Schéma retourné par l'API
-    """
     id: int
 
     class Config:
