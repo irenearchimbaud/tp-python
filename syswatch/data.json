@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-12-15T14:39:30.181608",
+  "hostname": "MSI",
+  "cpu_percent": 16.3,
+  "memory_total": 16866635776,
+  "memory_available": 5065125888,
+  "memory_percent": 70.0,
+  "disk_usage": "{'C:\\\\': 84.1}"
+}
