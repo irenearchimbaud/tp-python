@@ -1,8 +1,11 @@
 from pydantic import BaseModel
-
+from datetime import date
 
 class AuthorBase(BaseModel):
-    name: str
+    first_name: str
+    last_name: str
+    birth_date: date
+    nationality: str
 
 
 class AuthorCreate(AuthorBase):
