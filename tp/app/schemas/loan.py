@@ -9,16 +9,10 @@ class LoanBase(BaseModel):
 
 
 class LoanCreate(LoanBase):
-    """
-    Schéma pour créer un emprunt
-    """
     pass
 
 
 class LoanRead(LoanBase):
-    """
-    Schéma retourné par l'API
-    """
     id: int
     loan_date: datetime
     return_date: datetime | None
